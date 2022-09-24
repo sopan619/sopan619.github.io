@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+::placeholder {
+  /* Microsoft Edge */
+  color: rgba(247, 228, 238, 0.705);
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #af0172a2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  background: #790252;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 4em;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 0.75em 1.5em rgba(0, 0, 0, 0.45);
+}
+form h3 {
+  color: azure;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+form input,
+form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 1.5em;
+  outline: none;
+  background: #8f73859f;
+  font-size: 18px;
+  color: rgba(255, 240, 254, 0.89);
+}
+form button {
+  padding: 15px;
+  background: #e80f88;
+  color: azure;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 18px auto 0;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
+}
+form button:hover {
+  background: #95ff95;
+  transform: scale(1.1);
+  color: #790252;
+}

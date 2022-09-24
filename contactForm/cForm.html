@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="cForm.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script src="cForm.js"></script>
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        method="POST"
+        action="https://script.google.com/macros/s/AKfycbx-KFkQrL9YbuMIoToZuItAPtvhz02QtPhb_Lhwep7Me90CH_lymVqZMQ1hE6lI7e_N/exec"
+        id="my-form"
+      >
+        <h3>GET IN TOUCH</h3>
+        <input
+          name="Name"
+          type="text"
+          id="name"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          name="Email"
+          type="email"
+          id="email"
+          placeholder="Email Address"
+          required
+        />
+        <input
+          name="Phone"
+          type="text"
+          id="phone"
+          placeholder="Your Phone"
+          required
+        />
+        <textarea
+          name="Issue"
+          type="textarea"
+          id="message"
+          rows="4"
+          placeholder="What is it thats bugging you?"
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
