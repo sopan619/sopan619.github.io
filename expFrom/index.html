@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,11 +15,27 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="./assets/favicon.f249d117.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon.f249d117.ico"
+      type="image/x-icon"
+    />
     <title>Expense Tracker Form</title>
-    <link rel="stylesheet" href="./assets/index.5cfabb42.css">
+    <link rel="stylesheet" href="./assets/index.5cfabb42.css" />
   </head>
   <body class="bg-[#f8f1f1]">
+    <!-- JavaScript -->
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <iframe
+      name="hiddenConfirm"
+      id="hiddenConfirm"
+      style="display: none"
+      onload="if(submitted){window.location='./response/index.html';
+      }"
+    ></iframe>
+
     <!-- The Image is Here -->
     <div class="image mt-3">
       <img
@@ -51,6 +67,9 @@
     >
       <form
         action="https://docs.google.com/forms/d/e/1FAIpQLSc7IUhZVPUdvL14nu3X8B5Zdk3yg3Mqsd_9MFb3MAp-EVXOFQ/formResponse"
+        method="post"
+        target="hiddenConfirm"
+        onsubmit="submitted=true"
         class="space-y-5"
       >
         <div class="category">
