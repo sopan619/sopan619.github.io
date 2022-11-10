@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Income Tracker Form</title>
+    <link rel="stylesheet" href="./assets/index.70ec778b.css" />
+  </head>
+  <body class="bg-[#f6f7e8]">
+    <!-- JavaScript -->
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <iframe
+      name="hiddenConfirm"
+      id="hiddenConfirm"
+      style="display: none"
+      onload="if(submitted){window.location='./response/index.html';
+    }"
+    ></iframe>
+
+    <!-- The Image is Here -->
+    <div class="image mt-3">
+      <img
+        src="./assets/income.d94ae3ef.jpg"
+        alt="expense image"
+        class="w-[95vw] md:w-[40vw] mx-auto rounded-xl border-b-4 border-amber-700/80 shadow-xl"
+      />
+    </div>
+    <!-- The Heading is Here -->
+    <div class="heading flex flex-col items-center justify-center mt-2">
+      <h1 class="text-[44px] text-[#1b1b19] font-dancin font-semibold">
+        Income Tracker
+      </h1>
+      <p
+        class="w-[85%] md:w-[60%] text-[12px] md:text-[14px] font-lexend break-words text-slate-600"
+      >
+        <i>
+          Fill in the transaction details below, and it will be
+          <b> captured</b> in a <b> Google sheet.</b> You can analize the sheet
+          for complete financial overview. The <b> Category</b> and
+          <b> Amount</b> is a <b> required</b> field and must be filled
+          properly!
+        </i>
+      </p>
+    </div>
+    <!-- The Form is Here -->
+    <div
+      class="flex flex-col justify-center align-middle mt-6 md:mt-2 border border-gray-200 w-[90vw] md:w-[50vw] mx-auto rounded-xl py-4 px-6 bg-white shadow-lg md:shadow-xl"
+    >
+      <form
+        action="https://docs.google.com/forms/d/e/1FAIpQLSdTdnzJv_dNtfUuqo7T5PFXeMXfhnfjoKdPNFublgxAWvgmXw/formResponse"
+        method="post"
+        target="hiddenConfirm"
+        onsubmit="submitted=true"
+        class="space-y-5"
+      >
+        <div class="category">
+          <select
+            name="entry.648434537"
+            required
+            class="w-full font-lexend border-2 rounded-sm border-b-[#ffe15b] border-transparent text-gray-800 focus:outline-none focus:border-transparent focus:ring focus:ring-amber-300"
+          >
+            <option disabled selected>Select Category</option>
+            <option>Salary</option>
+            <option>Savings</option>
+            <option>Others</option>
+          </select>
+        </div>
+        <div class="amount">
+          <input
+            type="number"
+            required
+            name="entry.820892538"
+            placeholder="Amount"
+            class="w-full font-lexend border-2 rounded-sm border-b-[#ffe15b] border-transparent text-gray-800 focus:outline-none focus:border-transparent focus:ring focus:ring-amber-300"
+          />
+        </div>
+        <div class="description">
+          <input
+            type="text"
+            name="entry.1831153842"
+            placeholder="Description"
+            class="w-full font-lexend border-2 rounded-sm border-b-[#ffe15b] border-transparent text-gray-800 focus:outline-none focus:border-transparent focus:ring focus:ring-amber-300"
+          />
+        </div>
+        <div class="btn w-full flex justify-center">
+          <button
+            type="submit"
+            class="bg-[#ffe15b] text-slate-700 font-lexend font-semibold text-sm px-3 py-2 rounded-md w-[80%] md:w-[50%] mx-auto shadow-lg md:shadow-xl"
+          >
+            Submit Entry
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
