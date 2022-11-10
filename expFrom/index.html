@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/assets/favicon.f249d117.ico" type="image/x-icon" />
+    <title>Expense Tracker Form</title>
+    <link rel="stylesheet" href="/assets/index.5cfabb42.css">
+  </head>
+  <body class="bg-[#f8f1f1]">
+    <!-- The Image is Here -->
+    <div class="image mt-3">
+      <img
+        src="/assets/expense.f08ca365.png"
+        alt="expense image"
+        class="w-[95vw] md:w-[40vw] mx-auto rounded-xl border-b-4 border-gray-700/80 shadow-xl"
+      />
+    </div>
+    <!-- The Heading is Here -->
+    <div class="heading flex flex-col items-center justify-center mt-2">
+      <h1 class="text-[44px] text-[#0F0E0E] font-dancin font-semibold">
+        Expense Tracker
+      </h1>
+      <p
+        class="w-[85%] md:w-[60%] text-[12px] md:text-[14px] font-lexend break-words text-slate-600"
+      >
+        <i>
+          Fill in the transaction details below, and it will be
+          <b> captured</b> in a <b> Google sheet.</b> You can analize the sheet
+          for complete financial overview. The <b> Category</b> and
+          <b> Amount</b> is a <b> required</b> field and must be filled
+          properly!
+        </i>
+      </p>
+    </div>
+    <!-- The Form is Here -->
+    <div
+      class="flex flex-col justify-center align-middle mt-6 md:mt-2 border border-gray-200 w-[90vw] md:w-[50vw] mx-auto rounded-xl py-4 px-6 bg-white shadow-lg md:shadow-xl"
+    >
+      <form
+        action="https://docs.google.com/forms/d/e/1FAIpQLSc7IUhZVPUdvL14nu3X8B5Zdk3yg3Mqsd_9MFb3MAp-EVXOFQ/formResponse"
+        class="space-y-5"
+      >
+        <div class="category">
+          <!-- <label for="entry.1404378563">Category</label> -->
+          <select
+            name="entry.1404378563"
+            required
+            class="w-full font-lexend border-2 rounded-sm border-b-rose-600 border-transparent text-gray-800 focus:outline-none focus:border-transparent focus:ring focus:ring-rose-300"
+          >
+            <option disabled selected>Select Category</option>
+            <option>Home</option>
+            <option>Food</option>
+            <option>Personal</option>
+            <option>Health</option>
+            <option>Travel</option>
+            <option>Debt</option>
+            <option>Gift</option>
+            <option>Pet</option>
+            <option>Miscellaneous</option>
+          </select>
+        </div>
+        <div class="amount">
+          <!-- <label for="entry.1679532053">Amount</label> -->
+          <input
+            type="number"
+            required
+            name="entry.1679532053"
+            placeholder="Amount"
+            class="w-full font-lexend border-2 rounded-sm border-b-rose-600 border-transparent text-gray-800 focus:outline-none focus:border-transparent focus:ring focus:ring-rose-300"
+          />
+        </div>
+        <div class="description">
+          <!-- <label for="entry.896363940">Description</label> -->
+          <input
+            type="text"
+            name="entry.896363940"
+            placeholder="Description"
+            class="w-full font-lexend border-2 rounded-sm border-b-rose-600 border-transparent text-gray-800 focus:outline-none focus:border-transparent focus:ring focus:ring-rose-300"
+          />
+        </div>
+        <div class="btn w-full flex justify-center">
+          <button
+            type="submit"
+            class="bg-rose-500 text-[#f8f1f1] font-lexend font-semibold text-sm px-3 py-2 rounded-md w-[80%] md:w-[50%] mx-auto shadow-lg md:shadow-xl"
+          >
+            Submit Entry
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
